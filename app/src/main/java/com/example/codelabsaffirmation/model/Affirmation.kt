@@ -1,3 +1,9 @@
 package com.example.codelabsaffirmation.model
 
-data class Affirmation(val resourceId: Int)
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+
+data class Affirmation(
+    @StringRes val resourceId: Int,
+    @DrawableRes val imageResource: Int
+)
